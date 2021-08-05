@@ -130,10 +130,10 @@ public class MainActivity extends AppCompatActivity {
                 myBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        int num1 = Integer.parseInt(etInput1.getText().toString());
-                        int num2 = Integer.parseInt(etInput2.getText().toString());
-                        int result = num1 + num2;
-                        tvEx3.setText(result);
+                        String num1 = etInput1.getText().toString();
+                        String num2 = etInput2.getText().toString();
+                        int result = Integer.parseInt(num1) + Integer.parseInt(num2);
+                        tvEx3.setText("the sum is " + result);
                     }
                 });
 
